@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>SideBar_Nav</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="login.jpg" />
+    <None Remove="Pages\Attendence.jpg" />
+    <None Remove="Pages\Record.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="login.jpg" />
+    <Resource Include="Pages\Attendence.jpg" />
+    <Resource Include="Pages\Record.jpg" />
+  </ItemGroup>
+
+</Project>
