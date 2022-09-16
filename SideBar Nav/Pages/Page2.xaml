@@ -4,59 +4,93 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SideBar_Nav.Pages"
-      mc:Ignorable="d" d:DesignWidth="800"
-      Title="Page2" Height="692">
+      mc:Ignorable="d" d:DesignWidth="800"  d:DesignHeight="890"
+      Title="Page2">
 
     <Grid Background="#f1f3f5">
-        <Label x:Name="label" Content="INCOMING RECORD" HorizontalAlignment="Left" Height="24" Margin="10,20,0,0" VerticalAlignment="Top" Width="119" RenderTransformOrigin="0.832,0.5"/>
-        <CheckBox x:Name="checkBox" Content="REFRESH LIST" HorizontalAlignment="Left" Height="16" Margin="168,25,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="-1.148,-0.714"/>
-        <ListBox x:Name="INCOMING_LISTBOX" HorizontalAlignment="Left" Height="300" Margin="10,45,0,0" VerticalAlignment="Top" Width="250" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-        <Label Content="OUTGOING RECORDS" HorizontalAlignment="Left" Height="30" Margin="10,360,0,0" VerticalAlignment="Top" Width="128"/>
-        <ListBox x:Name="OUTGOING_LISTBOX" HorizontalAlignment="Left" Height="300" Margin="10,380,0,0" VerticalAlignment="Top" Width="250" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-        <RadioButton Content="ATTENDENCE" HorizontalAlignment="Left" Height="16" Margin="280,11,0,0" VerticalAlignment="Top" Width="95"/>
-        <RadioButton Content="VISITOR" HorizontalAlignment="Left" Height="20" Margin="280,32,0,0" VerticalAlignment="Top" Width="67" RenderTransformOrigin="0.589,-0.1"/>
-        <RadioButton Content="TRANSIT" HorizontalAlignment="Left" Height="17" Margin="280,52,0,0" VerticalAlignment="Top" Width="67"/>
-        <CheckBox Content="TRANSIT DATE" HorizontalAlignment="Left" Height="16" Margin="390,11,0,0" VerticalAlignment="Top" Width="104"/>
-        <ComboBox x:Name="TRANSIT_DATE_COMBO" HorizontalAlignment="Left" Height="20" Margin="390,33,0,0" VerticalAlignment="Top" Width="170"/>
-        <Label Content="BARCODE#" HorizontalAlignment="Left" Height="23" Margin="280,69,0,0" VerticalAlignment="Top" Width="74"/>
-        <TextBox x:Name="BARCODE_TXT" HorizontalAlignment="Left" Height="23" Margin="280,97,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="76"/>
-        <Label Content="MANUAL REF#" HorizontalAlignment="Left" Height="28" Margin="368,69,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.5,0.786"/>
-        <TextBox x:Name="MANUAL_REF_TXT" HorizontalAlignment="Left" Height="23" Margin="370,97,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="76"/>
-        <Label Content="IDENTIFIED#" HorizontalAlignment="Left" Height="26" Margin="465,69,0,0" VerticalAlignment="Top" Width="86"/>
-        <TextBox x:Name="IDENTIFIED_TXT" HorizontalAlignment="Left" Height="23" Margin="465,97,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="76"/>
-        <Label Content="UNKNOWN" HorizontalAlignment="Left" Height="33" Margin="550,90,0,0" VerticalAlignment="Top" Width="97" FontWeight="Bold" FontSize="16"/>
-        <CheckBox Content="CHECK ACCOUNT" HorizontalAlignment="Left" Margin="671,15,0,0" VerticalAlignment="Top" Width="119" Height="18" RenderTransformOrigin="0.538,-0.056"/>
-        <CheckBox Content="CHECK MESSEAGE" HorizontalAlignment="Left" Height="22" Margin="671,38,0,0" VerticalAlignment="Top" Width="119"/>
-        <CheckBox Content="SKIP INVALID" HorizontalAlignment="Left" Height="22" Margin="671,60,0,0" VerticalAlignment="Top" Width="99"/>
-        <CheckBox Content="POST MESSAGE" HorizontalAlignment="Left" Height="23" Margin="672,83,0,0" VerticalAlignment="Top" Width="107"/>
-        <Label Content="ENTER BARCODE ID" HorizontalAlignment="Left" Height="28" Margin="280,130,0,0" VerticalAlignment="Top" Width="261" FontWeight="Bold" FontSize="16"/>
-        <GroupBox x:Name="TRANSIT_REASON_GB" HorizontalAlignment="Left" Height="72" Header="TRANSIT REASON" Margin="280,163,0,0" VerticalAlignment="Top" Width="489">
-            <Canvas x:Name="TRANSIT_REASON_CANVAS" HorizontalAlignment="Left" Height="50" Margin="0,0,0,0" VerticalAlignment="Top" Width="489">
-                <Label Content="TO MEET" Height="25" Canvas.Left="8" Canvas.Top="0" Width="60"/>
-                <ComboBox x:Name="TO_MEET_COMBO" Height="25" Canvas.Left="8" Canvas.Top="20" Width="220"/>
-                <Label Content="REASON" Height="25" Canvas.Left="280" Canvas.Top="0"  Width="123"/>
-                <ComboBox x:Name="REASON_COMBO" Height="25" Canvas.Left="260" Canvas.Top="20" Width="220"/>
+
+
+        <Label x:Name="label" Content="Incoming Records" HorizontalAlignment="Left" Height="24" Margin="10,40,0,0" VerticalAlignment="Top" Width="119" RenderTransformOrigin="0.832,0.5"/>
+        <CheckBox x:Name="checkBox" Content="Refresh List" HorizontalAlignment="Left" Height="16" Margin="168,45,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="-1.148,-0.714"/>
+        <ListBox x:Name="INCOMING_LISTBOX" HorizontalAlignment="Left" Height="300" Margin="10,75,0,0" VerticalAlignment="Top" Width="250" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Label Content="Outgoing Records" HorizontalAlignment="Left" Height="30" Margin="10,380,0,0" VerticalAlignment="Top" Width="128"/>
+        <ListBox x:Name="OUTGOING_LISTBOX" HorizontalAlignment="Left" Height="300" Margin="10,410,0,0" VerticalAlignment="Top" Width="250" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <RadioButton Content="Attendence" HorizontalAlignment="Left" Height="16" Margin="280,41,0,0" VerticalAlignment="Top" Width="95"/>
+        <RadioButton Content="Visitor" HorizontalAlignment="Left" Height="20" Margin="280,62,0,0" VerticalAlignment="Top" Width="67" RenderTransformOrigin="0.589,-0.1"/>
+        <RadioButton Content="Transit" HorizontalAlignment="Left" Height="17" Margin="280,82,0,0" VerticalAlignment="Top" Width="67"/>
+        <CheckBox Content="Transit Date" HorizontalAlignment="Left" Height="16" Margin="390,41,0,0" VerticalAlignment="Top" Width="104"/>
+        <ComboBox x:Name="TRANSIT_DATE_COMBO" HorizontalAlignment="Left" Height="20" Margin="390,63,0,0" VerticalAlignment="Top" Width="170"/>
+        <Label Content="Barcode#" HorizontalAlignment="Left" Height="25" Margin="280,102,0,0" VerticalAlignment="Top" Width="90"/>
+        <TextBox x:Name="BARCODE_TXT" HorizontalAlignment="Left" Height="20" Margin="280,127,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="74"/>
+        <Label Content="Manual Ref#" HorizontalAlignment="Left" Height="25" Margin="368,102,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.5,0.786"/>
+        <TextBox x:Name="MANUAL_REF_TXT" HorizontalAlignment="Left" Height="20" Margin="370,127,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="76"/>
+        <Label Content="Identified#" HorizontalAlignment="Left" Height="25" Margin="465,99,0,0" VerticalAlignment="Top" Width="90"/>
+        <TextBox x:Name="IDENTIFIED_TXT" HorizontalAlignment="Left" Height="20" Margin="465,127,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="76"/>
+        <Label Content="UNKNOWN" HorizontalAlignment="Left" Height="33" Margin="550,110,0,0" VerticalAlignment="Top" Width="97" FontWeight="Bold" FontSize="16"/>
+        <CheckBox Content="Check Account" HorizontalAlignment="Left" Margin="671,45,0,0" VerticalAlignment="Top" Width="119" Height="18" RenderTransformOrigin="0.538,-0.056"/>
+        <CheckBox Content="Check Message" HorizontalAlignment="Left" Height="18" Margin="671,68,0,0" VerticalAlignment="Top" Width="119"/>
+        <CheckBox Content="Skip Invalid" HorizontalAlignment="Left" Height="18" Margin="671,90,0,0" VerticalAlignment="Top" Width="119"/>
+        <CheckBox Content="Post Message" HorizontalAlignment="Left" Height="18" Margin="672,113,0,0" VerticalAlignment="Top" Width="119"/>
+        <Label Content="ENTER BARCODE ID" HorizontalAlignment="Left" Height="28" Margin="280,150,0,0" VerticalAlignment="Top" Width="261" FontWeight="Bold" FontSize="16"/>
+        <GroupBox x:Name="TRANSIT_REASON_GB" HorizontalAlignment="Left" Height="65" Header="TRANSIT REASON" Margin="280,183,0,0" VerticalAlignment="Top" Width="490">
+            <Canvas x:Name="TRANSIT_REASON_CANVAS" HorizontalAlignment="Left" Height="60" Margin="0,0,0,0" VerticalAlignment="Top" Width="485">
+                <Label Content="To Meet" Height="25" Canvas.Left="8" Canvas.Top="0" Width="60"/>
+                <ComboBox x:Name="TO_MEET_COMBO" Height="20" Canvas.Left="8" Canvas.Top="20" Width="220"/>
+                <Label Content="Reason" Height="25" Canvas.Left="250" Canvas.Top="0"  Width="123"/>
+                <ComboBox x:Name="REASON_COMBO" Height="20" Canvas.Left="250" Canvas.Top="20" Width="220"/>
             </Canvas>
         </GroupBox>
-        <GroupBox x:Name="AUTHORIZATION_GB" HorizontalAlignment="Left" Height="73" Header="AUTHORIZATION" Margin="280,250,0,0" VerticalAlignment="Top" Width="489">
-            <Canvas x:Name="AUTHORIZATION_CANVAS" HorizontalAlignment="Left" Height="65" Margin="0,0,0,0" VerticalAlignment="Top" Width="489">
-                <RadioButton Content="OUT" Height="22" Canvas.Left="5" Canvas.Top="8" Width="50"/>
-                <RadioButton Content="IN" Height="22" Canvas.Left="5" Canvas.Top="28" Width="45"/>
-                <Label Content="FROM TIME" Height="25" Canvas.Left="60" Canvas.Top="3" Width="74" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                <TextBox x:Name="FROM_TIMETXT" Height="25" Canvas.Left="132" TextWrapping="Wrap" Text="TextBox" Canvas.Top="3" Width="70"/>
-                <Label Content="TO TIME" Height="25" Canvas.Left="60" Canvas.Top="28" Width="55"/>
-                <TextBox x:Name="TO_TIME_TXT" Height="25" Canvas.Left="132" TextWrapping="Wrap" Text="TextBox" Canvas.Top="30" Width="70"/>
-                <Label Content="FROM DATE" Height="25" Canvas.Left="210" Canvas.Top="3" Width="75"/>
-                <TextBox x:Name="FROM_DATE_TXT" Height="25" Canvas.Left="280" TextWrapping="Wrap" Text="TextBox" Canvas.Top="3" Width="70"/>
-                <Label Content="TO DATE" Height="25" Canvas.Left="210" Canvas.Top="28" Width="60"/>
-                <TextBox x:Name="TO_DATE_TXT" Height="25" Canvas.Left="280" TextWrapping="Wrap" Text="TextBox" Canvas.Top="30" Width="70"/>
-                <Label Content="PERMITED BY" Height="25" Canvas.Left="372" Canvas.Top="3" Width="83"/>
-                <ComboBox x:Name="PERMITED_BY_COMBO" Height="25" Canvas.Left="372" Canvas.Top="28" Width="97"/>
+        <GroupBox x:Name="AUTHORIZATION_GB" HorizontalAlignment="Left" Height="73" Header="AUTHORIZATION" Margin="280,260,0,0" VerticalAlignment="Top" Width="490">
+            <Canvas x:Name="AUTHORIZATION_CANVAS" HorizontalAlignment="Left" Height="65" Margin="0,0,0,0" VerticalAlignment="Top" Width="485">
+                <RadioButton Content="Out" Height="22" Canvas.Left="5" Canvas.Top="8" Width="50"/>
+                <RadioButton Content="In" Height="22" Canvas.Left="5" Canvas.Top="28" Width="45"/>
+                <Label Content="From Time" Height="25" Canvas.Left="60" Canvas.Top="3" Width="74" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox x:Name="FROM_TIMETXT" Height="20" Canvas.Left="125" TextWrapping="Wrap" Text="TextBox" Canvas.Top="3" Width="70"/>
+                <Label Content="To Time" Height="25" Canvas.Left="60" Canvas.Top="28" Width="55"/>
+                <TextBox x:Name="TO_TIME_TXT" Height="20" Canvas.Left="125" TextWrapping="Wrap" Text="TextBox" Canvas.Top="28" Width="70"/>
+                <Label Content="From Date" Height="25" Canvas.Left="210" Canvas.Top="3" Width="75"/>
+                <TextBox x:Name="FROM_DATE_TXT" Height="20" Canvas.Left="272" TextWrapping="Wrap" Text="TextBox" Canvas.Top="3" Width="70"/>
+                <Label Content="To Date" Height="25" Canvas.Left="210" Canvas.Top="28" Width="60"/>
+                <TextBox x:Name="TO_DATE_TXT" Height="20" Canvas.Left="272" TextWrapping="Wrap" Text="TextBox" Canvas.Top="28" Width="70"/>
+                <Label Content="Permited By" Height="25" Canvas.Left="360" Canvas.Top="3" Width="83"/>
+                <ComboBox x:Name="PERMITED_BY_COMBO" Height="20" Canvas.Left="362" Canvas.Top="28" Width="110"/>
             </Canvas>
         </GroupBox>
-        <GroupBox x:Name="TRANSIT_POINT_GB" HorizontalAlignment="Left" Height="68" Header="TRANSIT POINT" Margin="280,346,0,0" VerticalAlignment="Top" Width="489">
-            <Canvas HorizontalAlignment="Left" Height="68" Margin="0,0,0,0" VerticalAlignment="Top" Width="489"/>
+        <GroupBox x:Name="TRANSIT_POINT_GB" HorizontalAlignment="Left" Height="75" Header="TRANSIT POINT" Margin="280,345,0,0" VerticalAlignment="Top" Width="489">
+            <Canvas HorizontalAlignment="Left" Height="68" Margin="0,0,0,0" VerticalAlignment="Top" Width="480">
+                <Label Content="Operator" Height="25" Canvas.Left="5" Canvas.Top="3" Width="70" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <TextBox x:Name="operater_txt" Height="20" Canvas.Left="5" TextWrapping="Wrap" Text="TextBox" Canvas.Top="30" Width="92"/>
+                <Label Content="Time" Height="25" Canvas.Left="115" Canvas.Top="3" Width="70" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox x:Name="time_txt" Height="20" Canvas.Left="115" TextWrapping="Wrap" Text="TextBox" Canvas.Top="30" Width="70" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label Content="Date" Height="25" Canvas.Left="225" Canvas.Top="3" Width="70" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox x:Name="date_txt" Height="20" Canvas.Left="225" TextWrapping="Wrap" Text="TextBox" Canvas.Top="30" Width="70" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label Content="Location" Height="25" Canvas.Left="335" Canvas.Top="3" Width="70" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox x:Name="location_txt" Height="20" Canvas.Left="335" TextWrapping="Wrap" Text="TextBox" Canvas.Top="30" Width="135" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            </Canvas>
         </GroupBox>
+        <GroupBox x:Name="transit_person_details_gb" HorizontalAlignment="Left" Height="227" Header="TRANSIT PERSON DETAILS" Margin="280,430,0,0" VerticalAlignment="Top" Width="490">
+            <Canvas HorizontalAlignment="Center" Height="210" Margin="0,0,0,0" VerticalAlignment="Top" Width="480">
+                <Label Content="Name" Height="25" Canvas.Left="10" Canvas.Top="0" Width="96"/>
+                <ComboBox Height="25" Canvas.Left="10" Canvas.Top="25" Width="220" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label Content="Name" Height="25" Canvas.Left="290" Canvas.Top="0" Width="96" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <ComboBox Height="25" Canvas.Left="250" Canvas.Top="25" Width="220" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label Content="Name" Height="25" Canvas.Left="10" Canvas.Top="50" Width="96" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <ComboBox Height="25" Canvas.Left="10" Canvas.Top="75" Width="460" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Label Content="Name" Height="25" Canvas.Left="10" Canvas.Top="100" Width="96" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <ComboBox Height="25" Canvas.Left="10" Canvas.Top="125" Width="220" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Label Content="Name" Height="25" Canvas.Left="290" Canvas.Top="100" Width="96" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <ComboBox Height="25" Canvas.Left="250" Canvas.Top="125" Width="220" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Label Content="Name" Height="25" Canvas.Left="10" Canvas.Top="150" Width="96" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <ComboBox Height="25" Canvas.Left="10" Canvas.Top="175" Width="220" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Label Content="Name" Height="25" Canvas.Left="290" Canvas.Top="150" Width="96" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <ComboBox Height="25" Canvas.Left="250" Canvas.Top="175" Width="220" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </Canvas>
+        </GroupBox>
+        <CheckBox Content="Preview Gate Pass" HorizontalAlignment="Left" Height="25" Margin="280,662,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Save" HorizontalAlignment="Left" Height="25" Margin="442,665,0,0" VerticalAlignment="Top" Width="61"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Height="25" Margin="524,665,0,0" VerticalAlignment="Top" Width="62"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Height="25" Margin="613,665,0,0" VerticalAlignment="Top" Width="61"/>
+        <Button Content="Close" HorizontalAlignment="Left" Height="25" Margin="700,665,0,0" VerticalAlignment="Top" Width="61"/>
 
 
     </Grid>
