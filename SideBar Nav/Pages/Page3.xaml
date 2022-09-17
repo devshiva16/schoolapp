@@ -5,10 +5,192 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SideBar_Nav.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="850" d:DesignWidth="980"
       Title="Page3">
 
-    <Grid Background="#f1f3f5" Margin="0,0,-237,-277">
-        <Image HorizontalAlignment="Left" Height="667" Margin="23,23,0,0" VerticalAlignment="Top" Width="973" Source="/Pages/Record.jpg"/>
+    <Grid Background="#f1f3f5">
+        <RadioButton Content="Members" HorizontalAlignment="Left" Margin="22,21,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="108,21,0,0" VerticalAlignment="Top" Width="185" Height="22"/>
+        <RadioButton Content="Lib Title" HorizontalAlignment="Left" Margin="22,61,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Lib Accno" HorizontalAlignment="Left" Margin="106,61,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="MSG Records" HorizontalAlignment="Left" Margin="199,61,0,0" VerticalAlignment="Top"/>
+        <GroupBox Margin="307,18,0,0" Height="71" VerticalAlignment="Top" HorizontalAlignment="Left" Width="264">
+            <Canvas Margin="0,0,15,0">
+                <Label Content="Filter Type" Canvas.Left="10" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <ComboBox HorizontalAlignment="Left" VerticalAlignment="Center" Width="103" Canvas.Left="18" Canvas.Top="31" Height="22"/>
+                <RadioButton Content="" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="134" Canvas.Top="11"/>
+                <RadioButton Content="" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="180" Canvas.Top="11"/>
+                <RadioButton Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="222" Canvas.Top="11"/>
+                <RadioButton Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="134" Canvas.Top="31"/>
+                <RadioButton Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="180" Canvas.Top="31"/>
+                <RadioButton Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="222" Canvas.Top="31"/>
+            </Canvas>
+        </GroupBox>
+
+        <GroupBox Margin="22,94,0,0" HorizontalAlignment="Left" Width="549" Height="306" VerticalAlignment="Top">
+            <Canvas Height="310" Margin="0,0,12,0">
+                <Label Content="Course" HorizontalAlignment="Left" Margin="23,8,0,0" VerticalAlignment="Top" Height="28"/>
+                <Label Content="20" HorizontalAlignment="Left" Margin="238,8,0,0" VerticalAlignment="Top" Height="28"/>
+                <ComboBox HorizontalAlignment="Left" Margin="23,32,0,0" VerticalAlignment="Top" Width="240" Height="22"/>
+                <Label Content="Admission Year" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Canvas.Left="23" Canvas.Top="52"/>
+                <Label Content="20" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Canvas.Left="238" Canvas.Top="52"/>
+                <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="240" Height="22" Canvas.Left="23" Canvas.Top="76"/>
+                <Label Content="Class" HorizontalAlignment="Center" VerticalAlignment="Top" Height="28" Canvas.Left="23" Canvas.Top="96"/>
+                <Label Content="20" HorizontalAlignment="Center" VerticalAlignment="Top" Height="28" Canvas.Left="238" Canvas.Top="96"/>
+                <ComboBox HorizontalAlignment="Center" VerticalAlignment="Top" Width="240" Height="22" Canvas.Left="23" Canvas.Top="120"/>
+                <Label Content="School" HorizontalAlignment="Center" VerticalAlignment="Top" Height="28" Canvas.Left="23" Canvas.Top="140"/>
+                <Label Content="20" HorizontalAlignment="Center" VerticalAlignment="Top" Height="28" Canvas.Left="238" Canvas.Top="140"/>
+                <ComboBox HorizontalAlignment="Center" VerticalAlignment="Top" Width="240" Height="22" Canvas.Left="23" Canvas.Top="166"/>
+                <Label Content="Board" HorizontalAlignment="Center" VerticalAlignment="Top" Height="28" Canvas.Left="23" Canvas.Top="184"/>
+                <Label Content="20" HorizontalAlignment="Center" VerticalAlignment="Top" Height="28" Canvas.Left="238" Canvas.Top="186"/>
+                <ComboBox HorizontalAlignment="Center" VerticalAlignment="Top" Width="240" Height="22" Canvas.Left="23" Canvas.Top="208"/>
+                <Label Content="Medium" HorizontalAlignment="Center" VerticalAlignment="Top" Height="28" Canvas.Left="23" Canvas.Top="237"/>
+                <Label Content="20" HorizontalAlignment="Center" VerticalAlignment="Top" Height="28" Canvas.Left="238" Canvas.Top="237"/>
+                <ComboBox HorizontalAlignment="Center" VerticalAlignment="Top" Width="240" Height="22" Canvas.Left="23" Canvas.Top="261"/>
+                <Label Content="Admission Class" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Canvas.Left="283" Canvas.Top="8"/>
+                <Label Content="20" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Canvas.Left="497" Canvas.Top="8"/>
+                <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="240" Height="22" Canvas.Left="283" Canvas.Top="32"/>
+                <Label Content="Category" HorizontalAlignment="Center" VerticalAlignment="Top" Height="28" Canvas.Left="283" Canvas.Top="53"/>
+                <Label Content="20" HorizontalAlignment="Center" VerticalAlignment="Top" Height="28" Canvas.Left="497" Canvas.Top="53"/>
+                <ComboBox HorizontalAlignment="Center" VerticalAlignment="Top" Width="240" Height="22" Canvas.Left="283" Canvas.Top="77"/>
+                <Label Content="City" HorizontalAlignment="Center" VerticalAlignment="Top" Height="28" Canvas.Left="283" Canvas.Top="97"/>
+                <Label Content="20" HorizontalAlignment="Center" VerticalAlignment="Top" Height="28" Canvas.Left="497" Canvas.Top="97"/>
+                <ComboBox HorizontalAlignment="Center" VerticalAlignment="Top" Width="240" Height="22" Canvas.Left="283" Canvas.Top="121"/>
+                <Label Content="ID Remark" HorizontalAlignment="Center" VerticalAlignment="Top" Height="28" Canvas.Left="283" Canvas.Top="141"/>
+                <Label Content="20" HorizontalAlignment="Center" VerticalAlignment="Top" Height="28" Canvas.Left="497" Canvas.Top="141"/>
+                <ComboBox HorizontalAlignment="Center" VerticalAlignment="Top" Width="240" Height="22" Canvas.Left="283" Canvas.Top="165"/>
+                <Label Content="Father Occu" HorizontalAlignment="Center" VerticalAlignment="Top" Height="28" Canvas.Left="283" Canvas.Top="185"/>
+                <Label Content="20" HorizontalAlignment="Center" VerticalAlignment="Top" Height="28" Canvas.Left="497" Canvas.Top="185"/>
+                <ComboBox HorizontalAlignment="Center" VerticalAlignment="Top" Width="240" Height="22" Canvas.Left="283" Canvas.Top="211"/>
+                <Label Content="Occu Details" HorizontalAlignment="Center" VerticalAlignment="Top" Height="28" Canvas.Left="283" Canvas.Top="237"/>
+                <Label Content="20" HorizontalAlignment="Center" VerticalAlignment="Top" Height="28" Canvas.Left="497" Canvas.Top="237"/>
+                <ComboBox HorizontalAlignment="Center" VerticalAlignment="Top" Width="240" Height="21" Canvas.Left="283" Canvas.Top="262"/>
+            </Canvas>
+        </GroupBox>
+
+        <CheckBox Content="Status" HorizontalAlignment="Left" Margin="26,405,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="27,425,0,0" VerticalAlignment="Top" Width="102" Height="22"/>
+        <CheckBox Content="Sex" HorizontalAlignment="Left" Margin="146,405,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="147,425,0,0" VerticalAlignment="Top" Width="47" Height="22"/>
+        <CheckBox Content="Service" HorizontalAlignment="Left" Margin="206,405,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="207,425,0,0" VerticalAlignment="Top" Width="102" Height="22"/>
+        <CheckBox Content="Service Category" HorizontalAlignment="Left" Margin="326,405,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="326,425,0,0" VerticalAlignment="Top" Width="143" Height="22"/>
+        <CheckBox Content="Service Type" HorizontalAlignment="Left" Margin="486,405,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="485,425,0,0" VerticalAlignment="Top" Width="86" Height="22"/>
+
+        <CheckBox Content="Search on" HorizontalAlignment="Left" Margin="26,475,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="27,495,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
+        <CheckBox Content="Search" HorizontalAlignment="Left" Margin="166,475,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="167,495,0,0" TextWrapping="Wrap" Text="" Width="102" Height="22" VerticalAlignment="Top"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="29,522,0,0" SelectionChanged="ListBox_SelectionChanged" HorizontalAlignment="Left" Width="240" Height="294" VerticalAlignment="Top"/>
+        <Label Content="338" HorizontalAlignment="Left" Margin="288,527,0,0" VerticalAlignment="Top"/>
+        <Button Content="&gt;&gt;" HorizontalAlignment="Left" Margin="288,558,0,0" VerticalAlignment="Top" Width="31" Height="30"/>
+        <Button Content="&gt;&gt;" HorizontalAlignment="Left" Margin="288,598,0,0" VerticalAlignment="Top" Width="31" Height="30"/>
+        <Button Content="&lt;" HorizontalAlignment="Left" Margin="288,638,0,0" VerticalAlignment="Top" Width="31" Height="30"/>
+        <Button Content="&lt;&lt;" HorizontalAlignment="Left" Margin="288,678,0,0" VerticalAlignment="Top" Width="31" Height="30"/>
+        <Button Content="X" HorizontalAlignment="Left" Margin="288,718,0,0" VerticalAlignment="Top" Width="31" Height="30"/>
+
+
+        <Label Content="From ID" HorizontalAlignment="Left" Margin="329,469,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="335,494,0,0" TextWrapping="Wrap" Width="69" Height="22" VerticalAlignment="Top"/>
+        <Label Content="To ID" HorizontalAlignment="Left" Margin="409,469,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="415,494,0,0" TextWrapping="Wrap" Width="69" Height="22" VerticalAlignment="Top"/>
+        <Label Content="Selected ID" HorizontalAlignment="Left" Margin="489,469,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="494,493,0,0" VerticalAlignment="Top" Width="77" Height="22"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="337,522,0,0" SelectionChanged="ListBox_SelectionChanged" Height="294" VerticalAlignment="Top" HorizontalAlignment="Left" Width="234"/>
+        <TabControl Margin="587,19,0,0" HorizontalAlignment="Left" Width="374" Height="508" VerticalAlignment="Top">
+            <TabItem Header="Member">
+                <Grid Background="#FFF1F3F5">
+                    <GroupBox Header="" Margin="28,0,21,305">
+                        <Canvas Margin="10,0,-2,0">
+                            <CheckBox Content="Hostel Data" Canvas.Left="20" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <CheckBox Content="Item Data" Canvas.Left="20" Canvas.Top="30" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <CheckBox Content="Account Data" Canvas.Left="20" Canvas.Top="50" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <CheckBox Content="Misc Acc Data" Canvas.Left="20" Canvas.Top="70" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <CheckBox Content="Interaction Data" Canvas.Left="20" Canvas.Top="90" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <CheckBox Content="Supplement Data" Canvas.Left="150" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <CheckBox Content="Employee Data" Canvas.Left="150" Canvas.Top="30" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <CheckBox Content="Library Data" Canvas.Left="150" Canvas.Top="50" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <CheckBox Content="Message Data" Canvas.Left="150" Canvas.Top="70" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <CheckBox Content="Attendance Data" Canvas.Left="150" Canvas.Top="90" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <CheckBox Content="Delete Member" Canvas.Left="20" Canvas.Top="120" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <Button Content="Delete" HorizontalAlignment="Center" VerticalAlignment="Top" Height="30" Width="122" Canvas.Left="150" Canvas.Top="113"/>
+
+                        </Canvas>
+                    </GroupBox>
+                    <GroupBox Header="Export For Web" Margin="28,180,21,125">
+                        <Canvas Margin="0,0,-2,0">
+                            <Label Content="Period Setting" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <ComboBox Canvas.Left="6" Canvas.Top="26" Width="280" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <Label Content="From Date" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="50"/>
+                            <ComboBox Canvas.Left="6" Canvas.Top="76" Width="130" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <Label Content="To Date" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="50" Canvas.Left="150"/>
+                            <ComboBox Canvas.Left="156" Canvas.Top="76" Width="130" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+                            <Button Content="Export" HorizontalAlignment="Left" VerticalAlignment="Center" Height="30" Width="180" Canvas.Left="71" Canvas.Top="113"/>
+
+                        </Canvas>
+                    </GroupBox>
+                    <Button Content="Open Selected" HorizontalAlignment="Left" Margin="28,381,0,0" VerticalAlignment="Top" Height="36" Width="156"/>
+                    <Button Content="Transfer Records" HorizontalAlignment="Left" Margin="196,381,0,0" VerticalAlignment="Top" Height="36" Width="151"/>
+                    <Button Content="Items Issue" HorizontalAlignment="Left" Margin="196,430,0,0" VerticalAlignment="Top" Height="36" Width="151"/>
+                    <Button Content="Furnish Documents Data" HorizontalAlignment="Left" Margin="28,430,0,0" VerticalAlignment="Top" Height="34" Width="156"/>
+
+                </Grid>
+
+            </TabItem>
+            <!--<TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>-->
+        </TabControl>
+
+        <GroupBox Header="Reports" Margin="588,540,0,0" Height="276" VerticalAlignment="Top" HorizontalAlignment="Left" Width="373">
+            <Canvas Margin="0,0,-2,0">
+                <ComboBox Canvas.Left="16" Canvas.Top="16" Width="328" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <CheckBox Content="0" Canvas.Left="15" Canvas.Top="43" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <ComboBox Canvas.Left="16" Canvas.Top="62" Width="155" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <CheckBox Content="1" Canvas.Left="190" Canvas.Top="43" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <ComboBox Canvas.Left="191" Canvas.Top="61" Width="155" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <CheckBox Content="2" Canvas.Left="15" Canvas.Top="91" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <ComboBox Canvas.Left="15" Canvas.Top="109" Width="73" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <CheckBox Content="3" Canvas.Left="101" Canvas.Top="91" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <ComboBox Canvas.Left="100" Canvas.Top="110" Width="70" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <CheckBox Content="4" Canvas.Left="191" Canvas.Top="91" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <ComboBox Canvas.Left="192" Canvas.Top="109" Width="70" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <CheckBox Content="5" Canvas.Left="278" Canvas.Top="91" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <ComboBox Canvas.Left="277" Canvas.Top="110" Width="70" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+                <Button Content="Find" HorizontalAlignment="Left" VerticalAlignment="Center" Height="22" Width="60" Canvas.Left="65" Canvas.Top="142"/>
+                <Button Content="Get IDS" HorizontalAlignment="Left" VerticalAlignment="Center" Height="22" Width="60" Canvas.Left="157" Canvas.Top="142"/>
+                <Button Content="Drop IDS" HorizontalAlignment="Left" VerticalAlignment="Center" Height="22" Width="60" Canvas.Left="252" Canvas.Top="142"/>
+
+                <GroupBox Height="73" Width="188" HorizontalAlignment="Left" Canvas.Top="172" VerticalAlignment="Center" Canvas.Left="3">
+                    <Canvas>
+                        <ComboBox Canvas.Left="7" Canvas.Top="32" Width="70" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <Label Content="&lt;" Canvas.Left="77" Canvas.Top="29" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <ComboBox Canvas.Left="97" Canvas.Top="32" Width="70" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <CheckBox Content="Data Search" Canvas.Left="8" Canvas.Top="13" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+                    </Canvas>
+                </GroupBox>
+                <GroupBox Height="73" Width="164" HorizontalAlignment="Left" Canvas.Top="172" VerticalAlignment="Center" Canvas.Left="193">
+                    <Canvas>
+                        <RadioButton Content="0" Canvas.Left="6" Canvas.Top="8" FontSize="10" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        <RadioButton Content="1" Canvas.Left="36" Canvas.Top="8" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="10"/>
+                        <RadioButton Content="2" Canvas.Left="66" Canvas.Top="8" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="10"/>
+                        <RadioButton Content="3" Canvas.Left="96" Canvas.Top="8" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="10"/>
+                        <RadioButton Content="4" Canvas.Left="126" Canvas.Top="8" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="10"/>
+                        <CheckBox Content="Print" Canvas.Left="8" Canvas.Top="33" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <Button Content="View Report" HorizontalAlignment="Left" VerticalAlignment="Center" Height="25" Width="88" Canvas.Left="62" Canvas.Top="32"/>
+
+                    </Canvas>
+                </GroupBox>
+            </Canvas>
+        </GroupBox>
+
+
+
+
     </Grid>
 </Page>

@@ -24,5 +24,10 @@ namespace SideBar_Nav.Pages
         {
             InitializeComponent();
         }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
